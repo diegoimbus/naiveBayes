@@ -206,6 +206,12 @@ TOTALProbTotal3N = ProbTotal3 *100/ SumTotal
 TOTALProbTotal4N = ProbTotal4 *100/ SumTotal
 TOTALProbTotal5N = ProbTotal5 *100/ SumTotal
 
+print("TOTALProbTotal1N: ",TOTALProbTotal1N)
+print("TOTALProbTotal2N: ",TOTALProbTotal2N)
+print("TOTALProbTotal3N: ",TOTALProbTotal3N)
+print("TOTALProbTotal4N: ",TOTALProbTotal4N)
+print("TOTALProbTotalN: ",TOTALProbTotal5N)
+            
 #Determinamos la prob mas alta
 print("TODO FUNCIONA")
 ClassResul = 0
