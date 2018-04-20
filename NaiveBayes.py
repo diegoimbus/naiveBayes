@@ -157,6 +157,8 @@ VarNaDY = ContDrugY[4]
 VarKDY = ContDrugY[6]    
 
             #DistNormal
+            
+print VEdad        
 ProbDistNormalDAEdad = distNormal(VEdad, MediaEdadDA, VarEdadDA )
 ProbDistNormalDANa = distNormal(VNa, MediaNaDA, VarNaDA )
 ProbDistNormalDAK = distNormal(VK, MediaKDA, VarKDA )   
@@ -213,7 +215,7 @@ print("TOTALProbTotal4N: ",TOTALProbTotal4N)
 print("TOTALProbTotalN: ",TOTALProbTotal5N)
             
 #Determinamos la prob mas alta
-print("TODO FUNCIONA")
+
 ClassResul = 0
 if TOTALProbTotal1N>TOTALProbTotal2N and TOTALProbTotal1N>TOTALProbTotal3N and TOTALProbTotal1N>TOTALProbTotal4N and TOTALProbTotal1N>TOTALProbTotal5N:
     ClassResul = TOTALProbTotal1N
@@ -231,3 +233,12 @@ if TOTALProbTotal5N>TOTALProbTotal4N and TOTALProbTotal5N>TOTALProbTotal3N and T
     ClassResul = TOTALProbTotal5N
     print("Probabilidad mas alta pertenece a la Droga Y y es: ", ClassResul)
                 
+print(probAprioriA)
+print(probSA)
+print(probBPA)
+print(probCHA)
+print(ProbDistNormalDAEdad)
+print(ProbDistNormalDANa)
+print(ProbDistNormalDAK)
+
+print (distNormal(60,35.9130434782609,9.57035995753723))

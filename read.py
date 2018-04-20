@@ -83,7 +83,7 @@ for i in range(0, totalValores-1):
 precision = sumalistDelta / ContDistic
 #Calculo Edad con Precision
 for j in range(0, totalValores-1):
-    listaEdades[j] = math.ceil(listaEdades[j]/precision)  * precision
+    listaEdades[j] = round(listaEdades[j]/precision)  * precision
 
 
 #Calculo de precision para Na
@@ -108,7 +108,7 @@ for i in range(0, totalValores-1):
 precisionNa = sumalistDeltaNa1 / ContDisticNa
 #Calculo Na con Precision
 for j in range(0, totalValores-1):
-    listaNa[j] = math.ceil(listaNa[j]/precisionNa)  * precisionNa
+    listaNa[j] = round(listaNa[j]/precisionNa)  * precisionNa
     
 
 #Calculo de precision para K
@@ -133,7 +133,7 @@ for i in range(0, totalValores-1):
 precisionK = sumalistDeltaK1 / ContDisticK
 #Calculo Na con Precision
 for j in range(0, totalValores-1):
-    listaK[j] = math.ceil(listaK[j]/precisionK)  * precisionK 
+    listaK[j] = round(listaK[j]/precisionK)  * precisionK 
     
 
 listaSexos = df['Sex'].tolist()
@@ -335,46 +335,46 @@ for i in range(0, totalValores):
         
 
 #CALCULAMOS LA PROBABILIDAD PARA CADA SITUACION CONDICIONAL
-probsfda=(float(osfa)+1)/(contA+5)
-probsmda=(float(osma)+1)/(contA+5)
-probsfdb=(float(osfb)+1)/(contB+5)
-probsmdb=(float(osmb)+1)/(contB+5)
-probsfdc=(float(osfc)+1)/(contC+5)
-probsmdc=(float(osmc)+1)/(contC+5)
-probsfdx=(float(osfx)+1)/(contX+5)
-probsmdx=(float(osmx)+1)/(contX+5)
-probsfdy=(float(osfy)+1)/(contY+5)
-probsmdy=(float(osmy)+1)/(contY+5)
-probbhda=(float(obha)+1)/(contA+5)
-probbnda=(float(obna)+1)/(contA+5)
-probblda=(float(obla)+1)/(contA+5)
-probbhdb=(float(obhb)+1)/(contB+5)
-probbndb=(float(obnb)+1)/(contB+5)
-probbldb=(float(oblb)+1)/(contB+5)
-probbhdc=(float(obhc)+1)/(contC+5)
-probbndc=(float(obnc)+1)/(contC+5)
-probbldc=(float(oblc)+1)/(contC+5)
-probbhdx=(float(obhx)+1)/(contX+5)
-probbndx=(float(obnx)+1)/(contX+5)
-probbldx=(float(oblx)+1)/(contX+5)
-probbhdy=(float(obhy)+1)/(contY+5)
-probbndy=(float(obny)+1)/(contY+5)
-probbldy=(float(obly)+1)/(contY+5)
-probchda=(float(ocha)+1)/(contA+5)
-probcnda=(float(ocna)+1)/(contA+5)
-probclda=(float(ocla)+1)/(contA+5)
-probchdb=(float(ochb)+1)/(contB+5)
-probcndb=(float(ocnb)+1)/(contB+5)
-probcldb=(float(oclb)+1)/(contB+5)
-probchdc=(float(ochc)+1)/(contC+5)
-probcndc=(float(ocnc)+1)/(contC+5)
-probcldc=(float(oclc)+1)/(contC+5)
-probchdx=(float(ochx)+1)/(contX+5)
-probcndx=(float(ocnx)+1)/(contX+5)
-probcldx=(float(oclx)+1)/(contX+5)
-probchdy=(float(ochy)+1)/(contY+5)
-probcndy=(float(ocny)+1)/(contY+5)
-probcldy=(float(ocly)+1)/(contY+5)
+probsfda=(float(osfa)+1)/(contA+2)
+probsmda=(float(osma)+1)/(contA+2)
+probsfdb=(float(osfb)+1)/(contB+2)
+probsmdb=(float(osmb)+1)/(contB+2)
+probsfdc=(float(osfc)+1)/(contC+2)
+probsmdc=(float(osmc)+1)/(contC+2)
+probsfdx=(float(osfx)+1)/(contX+2)
+probsmdx=(float(osmx)+1)/(contX+2)
+probsfdy=(float(osfy)+1)/(contY+2)
+probsmdy=(float(osmy)+1)/(contY+2)
+probbhda=(float(obha)+1)/(contA+3)
+probbnda=(float(obna)+1)/(contA+3)
+probblda=(float(obla)+1)/(contA+3)
+probbhdb=(float(obhb)+1)/(contB+3)
+probbndb=(float(obnb)+1)/(contB+3)
+probbldb=(float(oblb)+1)/(contB+3)
+probbhdc=(float(obhc)+1)/(contC+3)
+probbndc=(float(obnc)+1)/(contC+3)
+probbldc=(float(oblc)+1)/(contC+3)
+probbhdx=(float(obhx)+1)/(contX+3)
+probbndx=(float(obnx)+1)/(contX+3)
+probbldx=(float(oblx)+1)/(contX+3)
+probbhdy=(float(obhy)+1)/(contY+3)
+probbndy=(float(obny)+1)/(contY+3)
+probbldy=(float(obly)+1)/(contY+3)
+probchda=(float(ocha)+1)/(contA+3)
+probcnda=(float(ocna)+1)/(contA+3)
+probclda=(float(ocla)+1)/(contA+3)
+probchdb=(float(ochb)+1)/(contB+3)
+probcndb=(float(ocnb)+1)/(contB+3)
+probcldb=(float(oclb)+1)/(contB+3)
+probchdc=(float(ochc)+1)/(contC+3)
+probcndc=(float(ocnc)+1)/(contC+3)
+probcldc=(float(oclc)+1)/(contC+3)
+probchdx=(float(ochx)+1)/(contX+3)
+probcndx=(float(ocnx)+1)/(contX+3)
+probcldx=(float(oclx)+1)/(contX+3)
+probchdy=(float(ochy)+1)/(contY+3)
+probcndy=(float(ocny)+1)/(contY+3)
+probcldy=(float(ocly)+1)/(contY+3)
 
 #CREAMOS VECTORES PARA EVITAR GRANDES FILAS DE DATOS
 vectorcondicionalA=[probsfda, probsmda, probbhda, probbnda, probblda, probchda, probcnda, probclda]
